@@ -1,5 +1,5 @@
 {% set name = "seastats" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/seastats-{{ version }}.tar.gz
-  sha256: 076b7a67a2954c9be2125627e8873be399b30ffb3ece16820e6fc20fb28e11ed
+  sha256: 08c7163d76a67663e80be930671df286f4ad20ca74a6a48067a623b3c43a5024
 
 build:
   noarch: python
