@@ -1,6 +1,6 @@
 {% set name = "seastats" %}
-{% set version = "0.2.0" %}
-{% set python_min = "3.10" %}
+{% set version = "0.2.2" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/seastats-{{ version }}.tar.gz
-  sha256: 2cc8db91a52c0fc540a2e14d0f4fb459007697ce52b2f11e2f82430d04bbf8f3
+  sha256: 611078a3797f835afbf6eea8671170864da8110f5ee53dcdc0ee59a91a9d6425
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - python >={{ python_min }}
     - deprecated
     - numpy
-    - pandas
+    - pandas >=1.0.0,<3.0.0
     - pyextremes
 
 test:
