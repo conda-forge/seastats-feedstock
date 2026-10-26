@@ -24,7 +24,7 @@ requirements:
     - python >={{ python_min }}
     - deprecated
     - numpy
-    - pandas
+    - pandas >=1.0.0,<3.0.0
     - pyextremes
 
 test:
